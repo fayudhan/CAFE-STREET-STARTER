@@ -1,0 +1,123 @@
+/* 1. CSS Reset  */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  vertical-align: baseline;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 100%;
+}
+
+body {
+  line-height: 1.5;
+  background: transparent;
+}
+
+/* Remove default style */
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Form element reset */
+fieldset {
+  border: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #000;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: monospace, sans-serif;
+  font-size: 1em;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+select,
+input,
+textarea,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* 2. Global Font (Poppins) */
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: var(--color-background);
+}
+
+/* 3. Color Variable */
+:root {
+  --color-primary: #ff902a; /* Warna utama */
+  --color-secondary: #f9d9aa; /* Warna sekunder */
+  --color-background: #f6ebda; /* Warna latar belakang */
+  --color-text: #2f2105; /* Warna teks */
+  --color-heading: #2f2105; /* Warna heading */
+  --color-button-bg: #ff902a; /* Warna background tombol */
+}
